@@ -18,8 +18,8 @@ export default function App() {
       <Text style={styles.text}>{lowerBound}-{upperBound}</Text>
       <View style={styles.button}>
         <Button onPress={() => {
-            setLowerBound((220-age) * 0.65);
-            setUpperBound((220-age) * 0.85);
+            setLowerBound(((220-age) * 0.65).toFixed(0))
+            setUpperBound(((220-age) * 0.85).toFixed(0))
           }}
           title="Calculate"
           style={styles.button}></Button>
